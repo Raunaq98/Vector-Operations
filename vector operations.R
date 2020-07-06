@@ -65,3 +65,13 @@ matrix1 / matrix2
 # [2,]  0.3333333 0.5000000
 
 #######################################
+
+
+TRUE & c(TRUE, FALSE, FALSE)
+#[1]  TRUE FALSE FALSE
+
+TRUE && c(TRUE, FALSE, FALSE)
+#[1] TRUE
+
+# In this case, the left operand is only evaluated with the first member of the right operand 
+# (the vector). The rest of the elements in the vector aren’t evaluated at all in this expression.
